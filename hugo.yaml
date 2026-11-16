@@ -179,3 +179,7 @@ outputs:
     # Search ships no index: `enable_search` in data/settings.yaml puts the
     # banner's search icon up, and the `/search` page it points to scopes a
     # Google search to this site.
+
+minify:
+  # home.json emits JSONP (loadJsonForCMSLookup(...)), which the JSON minifier rejects.
+  disableJSON: true
